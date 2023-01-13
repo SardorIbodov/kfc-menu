@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KFC | Menu</title>
+    <link rel="icon" type="image/x-icon" href="./img/kfc.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__bg-opacity">
+        <img src="./img/kfc-bg.jpg" alt="KFC background image" />
+      </div>
+      <h1 class="header__title">KFC</h1>
+    </header>
+    <main class="main">
+      <section class="cards">
+        <div class="card" id="lunchbox1">
+          <div class="card__info">
+            <div class="card__img">
+              <img src="./img/lunchbox1.png" alt="lunchbox1" />
+            </div>
+            <div class="card__desc">
+              <div class="card__name">lunchbox1</div>
+              <div class="card__price"><span>25000</span> so'm</div>
+            </div>
+          </div>
+          <div class="card__order">
+            <div class="card__counts">
+              <button class="card__btn card__btn-minus" data-symbol="-">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div class="card__count">0</div>
+              <button class="card__btn card__btn-plus" data-symbol="+">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <div class="card__total-price"><span>0</span> so'm</div>
+          </div>
+          <div class="card__calory"><span>0</span> Kcalories</div>
+        </div>
+
+        <div class="card" id="lunchbox2">
+          <div class="card__info">
+            <div class="card__img">
+              <img src="./img/lunchbox2.png" alt="lunchbox2" />
+            </div>
+            <div class="card__desc">
+              <div class="card__name">lunchbox2</div>
+              <div class="card__price"><span>30000</span> so'm</div>
+            </div>
+          </div>
+          <div class="card__order">
+            <div class="card__counts">
+              <button class="card__btn card__btn-minus" data-symbol="-">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div class="card__count">0</div>
+              <button class="card__btn card__btn-plus" data-symbol="+">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <div class="card__total-price"><span>0</span> so'm</div>
+          </div>
+          <div class="card__calory"><span>0</span> Kcalories</div>
+        </div>
+
+        <div class="card" id="lunchbox3">
+          <div class="card__info">
+            <div class="card__img">
+              <img src="./img/lunchbox3.png" alt="lunchbox3" />
+            </div>
+            <div class="card__desc">
+              <div class="card__name">lunchbox3</div>
+              <div class="card__price"><span>40000</span> so'm</div>
+            </div>
+          </div>
+          <div class="card__order">
+            <div class="card__counts">
+              <button class="card__btn card__btn-minus" data-symbol="-">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div class="card__count">0</div>
+              <button class="card__btn card__btn-plus" data-symbol="+">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <div class="card__total-price"><span>0</span> so'm</div>
+          </div>
+          <div class="card__calory"><span>0</span> Kcalories</div>
+        </div>
+      </section>
+
+      <button class="order__btn">Order</button>
+
+      <div class="modal">
+        <div class="modal__window">
+          <button class="modal__close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="modal__products">
+					</div>
+          <button class="modal__pay">Pay</button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
