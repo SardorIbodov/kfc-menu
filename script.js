@@ -107,3 +107,45 @@ modalCloseBtn.addEventListener("click", () => {
 modalPayBtn.addEventListener("click", () => {
   location.reload();
 });
+
+// View
+
+const view = document.querySelector(".view"),
+  viewClose = view.querySelector(".view__close"),
+  viewImg = view.querySelector("img");
+info = document.querySelectorAll(".card__img");
+
+info.forEach((el) =>
+  el.addEventListener("dblclick", (e) => {
+    const image = e.target.getAttribute("src");
+    viewImg.setAttribute("src", image);
+    view.classList.add("active");
+  })
+);
+
+viewClose.addEventListener("click", () => view.classList.remove("active"));
+
+// Level
+const level = document.querySelector(".header__level span");
+
+let time = 100;
+const levelFunction = (i = 0) => {
+  level.innerHTML = i;
+  if (level.innerHTML === "100") {
+    return;
+  } else if (level.innerHTML === "50") {
+    time = 150;
+  } else if (level.innerHTML === "75") {
+    time = 200;
+  } else if (level.innerHTML === "90") {
+    time = 300;
+  } else if (level.innerHTML === "95") {
+    time = 600;
+  }
+  i++;
+  setTimeout(() => {
+    levelFunction(i);
+  }, time);
+};
+
+levelFunction();
